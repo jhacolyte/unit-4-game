@@ -1,0 +1,23 @@
+.selected-character {
+    width: 250px;
+}
+
+.character {
+    width: 153px;
+    margin: 0px 40px 0px 40px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .character img {
+    border: 0 none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+  }
+
+header {
+    text-align: center;
+    padding-bottom: 150px;
+}
