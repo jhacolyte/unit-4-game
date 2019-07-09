@@ -170,14 +170,12 @@ $("#attack-button").on("click", function() {
     }
 });
 
-// var restartGame = function(inputEndGame) {
-//     var restart = $('<button class="btn">Restart</button>').click(function() {
-//         location.reload();
-//     });
+var restartGame = function(inputEndGame) {
+    var restart = $('<button class="btn">Restart</button>').click(function() {
+        location.reload();
+    });
 
-//     var gameState = $("<div>").text(inputEndGame);
-//     $("#gameMessage").append(gameState);
-//     $("#gameMessage").append(restart);
-//   };
-
-// });
+    var gameState = $("<div>").text(inputEndGame);
+    $("#gameMessage").append(gameState);
+    $("#gameMessage").append(restart);
+};
