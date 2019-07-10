@@ -1,28 +1,28 @@
 //Array of Playable Characters
 characters = {
-    'windu': {
-        name: 'windu',
+    'Mace Windu': {
+        name: 'Mace Windu',
         health: 120,
         attack: 8,
         imageUrl: "assets/images/windu.png",
         enemyAttackBack: 15
     },
-    'jinn': {
-        name: 'jinn',
+    'Qui Gon Jinn': {
+        name: 'Qui Gon Jinn',
         health: 100,
         attack: 14,
         imageUrl: "assets/images/jinn.png",
         enemyAttackBack: 5
     },
-    'traya': {
-        name: 'traya',
+    'Darth Traya': {
+        name: 'Darth Traya',
         health: 150,
         attack: 8,
         imageUrl: "assets/images/traya.png",
         enemyAttackBack: 20
     },
-    'revan': {
-        name: 'revan',
+    'Darth Revan': {
+        name: 'Darth Revan',
         health: 180,
         attack: 7,
         imageUrl: "assets/images/revan.png",
