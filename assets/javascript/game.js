@@ -160,6 +160,8 @@ $("#attack-button").on("click", function() {
                 renderMessage("clearMessage");
                 restartGame("You Won!!!! GAME OVER!!!");
                 setTimeout(function() {}, 2000);
+                $("#attack-button").unbind("click");
+
             }
         }
         turnCounter++;
@@ -179,3 +181,7 @@ var restartGame = function(inputEndGame) {
     $("#gameMessage").append(gameState);
     $("#gameMessage").append(restart);
 };
+
+// if (combatants == 0) {
+//     $("#attack-button").attr("disabled", true);
+// }
