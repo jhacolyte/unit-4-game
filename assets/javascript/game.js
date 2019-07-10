@@ -151,7 +151,7 @@ $("#attack-button").on("click", function() {
             if (currSelectedCharacter.health <= 0) {
                 showMessage("clearMessage");
                 restartGame("You have been defeated...GAME OVER!!!");
-                $("#attack-button").unbind("click");
+                $("#attack-button").attr("disabled", true);
             }
         } else {
             renderCharacters(currDefender, 'enemyDefeated');
@@ -160,7 +160,7 @@ $("#attack-button").on("click", function() {
                 showMessage("clearMessage");
                 restartGame("You Won!!!! GAME OVER!!!");
                 setTimeout(function() {}, 2000);
-                $("#attack-button").unbind("click");
+                $("#attack-button").attr("disabled", true);
 
             }
         }
@@ -181,6 +181,8 @@ var restartGame = function(inputEndGame) {
     $("#gameMessage").append(gameState);
     $("#gameMessage").append(restart);
 };
+
+
 
 // if (combatants == 0) {
 //     $("#attack-button").attr("disabled", true);
